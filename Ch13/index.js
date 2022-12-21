@@ -1,7 +1,7 @@
 // Create web server .. http module
 import http from 'http';
 const server = http.createServer((req, res) => {
-    // res.writeHead(200, "OK", { "Content- type": "text/html" });
+    res.writeHead(200, "OK", { "Content- type": "text/html" });
     // res.end('<h1>Home page</h1>');
     if (req.url == '/') {
         res.end('<h1>Home page</>');
